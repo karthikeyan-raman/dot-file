@@ -7,21 +7,14 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# nvm path
-export NVM_HOME=/Users/ramankar/.nvm
+export PATH=~/.npm-global/bin:$PATH
 
-export PATH=${PATH}:${NVM_HOME}
-
-source ${NVM_HOME}/nvm.sh
-
-
-# Flutter Path
-export PATH="$PATH:/Users/ramankar/Development/flutter/bin"
+source ~/.profile
 
 
 ZSH_DISABLE_COMPFIX="true"
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ramankar/.oh-my-zsh"
+export ZSH="/Users/karthik/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -89,7 +82,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions history-substring-search)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions history-substring-search jsontools)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,5 +118,4 @@ source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_DIR_PATH_ABSOLUTE=true
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH="/usr/local/sbin:$PATH"
+export PATH="${HOME}/.pyenv/shims:${PATH}"
